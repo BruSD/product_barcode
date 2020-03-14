@@ -1,7 +1,10 @@
 import 'dart:collection';
 
 class Codes {
-  HashMap<int, Map> _barcodes = HashMap<int, Map<String, String>>();
+  HashMap<int, Map<String, String>> _barcodes =
+      HashMap<int, Map<String, String>>();
+
+  get bacodes => _barcodes;
 
   Codes() {
     init();

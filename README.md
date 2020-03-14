@@ -16,4 +16,4 @@ samples, guidance on mobile development, and a full API reference.
 source of barcode country value
 https://en.wikipedia.org/wiki/List_of_GS1_country_codes
 
-### created by BruSD
+### created by No-Garb Team

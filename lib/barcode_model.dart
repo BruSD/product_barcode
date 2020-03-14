@@ -29,22 +29,25 @@ class Barcode {
     String product = value.substring(last - 5, last);
     String company = value.substring(last - 9, last - 5);
     String country = value.substring(0, last - 9);
+
+    this.barcode = value;
+    this.country = int.parse(country);
+    this.company = int.parse(company);
+    this.product = int.parse(product);
+    this.checkSum = int.parse(checkSum);
+
     intCountry();
-    Barcode(
-        barcode: value,
-        country: int.parse(country),
-        company: int.parse(company),
-        product: int.parse(product),
-        checkSum: int.parse(checkSum));
   }
 
   intCountry() {
+    print(country);
     int exect = countryCode(country);
     _countryName = Codes().bacodes[exect]['name'];
     _countryFlagCode = Codes().bacodes[exect]['name'];
   }
 
   int countryCode(int country) {
+    print(country);
     if (0 <= country && country <= 139) {
       return 1;
     } else if (300 <= country && country <= 379) {
