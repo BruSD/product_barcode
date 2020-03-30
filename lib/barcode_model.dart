@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:productbarcode/constant/country_codes.dart';
-import 'package:productbarcode/utils.dart';
+
 
 class Barcode {
   int country;

@@ -1,4 +1,4 @@
-import 'package:productbarcode/barcode_model.dart';
+
 
 class Utils {
   bool validateGS1(String value) {
