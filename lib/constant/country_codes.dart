@@ -7,10 +7,10 @@ class Codes {
   get bacodes => _barcodes;
 
   Codes() {
-    init();
+    _init();
   }
 
-  init() {
+  _init() {
     _barcodes[1] = {"name": "United States", "code": "US"};
     _barcodes[300] = {"name": "France", "code": "FR"};
     _barcodes[380] = {"name": "Bulgaria", "code": "BG"};
