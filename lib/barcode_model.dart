@@ -13,6 +13,7 @@ class Barcode {
 
   /// After initialize your [Barcode] with our lib, now you can easy get country Flag code
   get countryFlagCode => _countryFlagCode;
+
   /// After initialize your [Barcode] with our lib, now you can easy get country Name
   get countryName => _countryName;
 
@@ -48,7 +49,7 @@ class Barcode {
     print(country);
     int exect = _countryCode(country);
     _countryName = Codes().bacodes[exect]['name'];
-    _countryFlagCode = Codes().bacodes[exect]['name'];
+    _countryFlagCode = Codes().bacodes[exect]['code'];
   }
 
   int _countryCode(int country) {
