@@ -23,7 +23,7 @@ Don't forget to import package
 import 'package:country_icons/country_icons.dart';
 import 'package:productbarcode/barcode_model.dart' as ProductBarcode;
 
-Barcode _barcode = Barcode.parsBarcode(
+ProductBarcode.Barcode _barcode = ProductBarcode.Barcode.parsBarcode(
         barcode: recognitionProvider.productToViewModel.barcode);
     String flag = _barcode.countryFlagCode;
 
