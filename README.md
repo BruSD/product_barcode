@@ -1,11 +1,11 @@
 # product_barcode
-
+####  product_barcode 100% compatible with country_icons
 Flutter package for fast search country of product by barcode
 
 source of barcode country value
 https://en.wikipedia.org/wiki/List_of_GS1_country_codes
 
-##How to:
+## How to:
 ```
 import 'package:productbarcode/barcode_model.dart' as ProductBarcode;
 
