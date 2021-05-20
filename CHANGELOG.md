@@ -1,3 +1,5 @@
+## [1.1.0+5] - auto update to null-safety
+
 ## [1.0.0+4] - Fix of getting country code of flag. Add sample code and update README
 
 ## [0.1.2+3] - Rename

@@ -3,13 +3,13 @@ import 'package:productbarcode/constant/country_codes.dart';
 
 /// General [Barcode] model, the maom instrument what you will use
 class Barcode {
-  int country;
-  int company; //TODO: Will implement if find free REST API for this
-  int product; //TODO: Will implement if find free REST API for this
-  int checkSum;
-  String barcode;
-  String _countryFlagCode;
-  String _countryName;
+  int? country;
+  int? company; //TODO: Will implement if find free REST API for this
+  int? product; //TODO: Will implement if find free REST API for this
+  int? checkSum;
+  String? barcode;
+  String? _countryFlagCode;
+  String? _countryName;
 
   /// After initialize your [Barcode] with our lib, now you can easy get country Flag code
   get countryFlagCode => _countryFlagCode;
@@ -20,16 +20,16 @@ class Barcode {
   ///You can manual create your barcode model with input required fields
   /// [country], [company],[product],[barcode],[checkSum]
   Barcode({
-    @required this.country,
-    @required this.company,
-    @required this.product,
-    @required this.barcode,
-    @required this.checkSum,
+    required this.country,
+    required this.company,
+    required this.product,
+    required this.barcode,
+    required this.checkSum,
   });
 
   /// The most easy way to pars your [Barcode] just put you barcode as [value]
   /// and you will get all what you need
-  Barcode.parsBarcode({@required String barcode}) {
+  Barcode.parsBarcode({required String barcode}) {
     int last = barcode.length - 1;
     String checkSum = barcode.substring(last);
     String product = barcode.substring(last - 5, last);
@@ -47,7 +47,7 @@ class Barcode {
 
   _intCountry() {
     print(country);
-    int exect = _countryCode(country);
+    int exect = _countryCode(country!);
     _countryName = Codes().bacodes[exect]['name'];
     _countryFlagCode = Codes().bacodes[exect]['code'];
   }

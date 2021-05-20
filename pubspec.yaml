@@ -1,11 +1,11 @@
 name: productbarcode
 description: Flutter package for fast search country of product by barcode
-version: 1.0.0+4
+version: 1.1.0+5
 homepage: "https://github.com/BruSD/product_barcode"
 repository: "https://github.com/BruSD/product_barcode"
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
